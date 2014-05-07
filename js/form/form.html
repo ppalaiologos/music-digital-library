@@ -1,0 +1,191 @@
+<html>
+	<head>
+		<title>Add a new band!</title>
+		<link rel="stylesheet" type="text/css" href="form.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<script>
+			/*Add member form parts*/
+			function addMember(rootID)
+			{
+				//find root element and number of siblings
+				var root = document.getElementById(rootID);
+				var children = root.childNodes.length;
+				i = (children -2)/2;//have to count out the whitespace
+				//create the first line for the name
+				var line = document.createElement('tr');
+				if(i==0) line.setAttribute("id", "first");
+				var column = document.createElement('td');
+				column.className = 'cap';
+				var txt = document.createTextNode('Name');
+				var column2 = document.createElement('td');
+				column2.className = 'inp';
+				column2.innerHTML = '<input type="text" name="mname'+i+'" required>';
+				//create second line for position input
+				var line2 = document.createElement('tr');
+				var column3 = document.createElement('td');
+				column.className = 'cap';
+				var txt2 = document.createTextNode('Position');
+				var column4 = document.createElement('td');
+				column4.className = 'inp';
+				column4.innerHTML = '<input type="text" name="mpos'+i+'" required placeholder="position1,position2,position3">';
+				//append elements
+				column.appendChild(txt);
+				column3.appendChild(txt2);
+				line.appendChild(column);
+				line.appendChild(column2);
+				line2.appendChild(column3);
+				line2.appendChild(column4);
+				root.appendChild(line);
+				root.appendChild(line2);
+			}
+			
+			/*Remove blanks and extra commas from position text*/
+			function normalize(str)
+			{
+				alert(str);
+				str = str.replace(" ", "");
+				var temp = str.slice(-1);
+				if(temp=="r")
+				{
+					str = str.substring(0, element.value.length-1);
+				}
+				return str;
+			}
+			
+			/*when clicking the submit button, send request*/
+			function sendData()
+			{
+				
+				/*collect the data to send*/
+				var params = "";
+				//get all <input> elements
+				var form = document.getElementsByTagName("input");
+				//iterate through the elements and add them as parameters
+				for(var i=0; i< form.length; i++) params = params + form[i].name +"="+encodeURIComponent(form[i].value)+"&";
+				//add number of members
+				var mem = document.getElementById("memb").childNodes;
+				var i = (mem.length-2)/2;
+				params = params + "noOfMemb="+encodeURIComponent(i);
+				/*create the xhr object*/
+				var xhr;
+				if (window.XMLHttpRequest)
+				{// code for IE7+, Firefox, Chrome, Opera, Safari
+	  				xhr=new XMLHttpRequest();
+				}
+				else
+				{// code for IE6, IE5
+	  				xhr=new ActiveXObject("Microsoft.XMLHTTP");
+				}
+				xhr.open("POST","../../Service",true);
+				xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+				xhr.setRequestHeader("request-type","add");
+				xhr.responseType = "text";
+				xhr.onreadystatechange = function()
+				{
+					if(xhr.readyState==4 && xhr.status==200 && xhr.responseText=="Success")
+					{		
+						
+						/*DOM tree creation*/
+						//this is the node to which the new node will be appended
+						var broot = window.opener.document.getElementById("bCont");
+						var id = form[1].value;
+						//prepare member string
+						var temp;
+						var mStr="";
+						for(var j=7; j<form.length; j=j+2)
+						{//name in 
+							mStr +="<span>"+form[j].value+" in ";
+							//if there is a spare comma, remove it
+							if(form[j+1].value.slice(-1)==",")
+							{
+								form[j+1].value = form[j+1].value.substring(0, form[j+1].value.length-1);
+							}//remove spaces at start and end
+							form[j+1].value = form[j+1].value.replace(/,\s+/g, ",");
+							//split at commas
+							temp = form[j+1].value.split(",");
+							//mStr = name in pos0
+							mStr += temp[0];
+							for(var k=1; k<temp.length-1; k++)
+							{
+								//mStr = name in pos0, pos1, pos2
+								mStr += ", "+temp[k];
+							}
+							//if there is only one position, skip the and
+							if(temp.length>1)
+							{//mStr = name in pos0, pos1, pos2 and pos3
+								mStr += " and "+temp[temp.length-1];
+							}
+							mStr += "</span><br/>";//last touch
+						}
+						
+						//prepare full string and append 
+						broot.innerHTML += "<section id='"+ id + "' class='container'><div class='left_col'>" +
+						"<img src='images/lefts.jpg'/><br/><br/>"+"<h4>Discography</h4><span>"+form[4].value + "</span> studio albums<br/><span>"+
+						form[5].value + "</span> EPs<br/><span>"+form[6].value + "</span> singles"+"</div>"+"<div class='right_col'>"
+						+"<img src='images/guitar.jpg'/><br/><br/>"+"<h4>Controls</h4>"+"<button type='button' onclick='reMove(\""+ id +"\")'>Remove</button><br/>"
+						+"<button type='button' onclick='startEditMode(\""+ id + "\")'>Update</button><br/>"
+						+"<input type='checkbox' name='status' value='"+id+"'>Mark</input>"+"</div>"+"<div class='page_content'><br/><br/><br/>"
+						+"<p><h2><span>"+form[0].value+"</span></h2></p>"+"<p>A <span>"+ form[2].value + "</span> band formed in <span>" +form[3].value+"</span></p><br/>"
+						+"<h4 class='that'> Current Members </h4><p>"+mStr+"</p><br/><br/><br/><br/>"+"<h5><a href='#top'>Back to top...</a></h5>"
+						+"<br/><br/><br/><br/><br/>"+"</div>"+"</section>";
+					
+						self.close();
+					}
+				}
+				xhr.send(params);			
+			}
+			//
+			function removeMembers(id)
+			{
+				//get member root
+				var memb = window.document.getElementById(id);
+				//remove children
+				memb.innerHTML = "<tr><td><button type='button' onclick='addMember(\"memb\");'>Add member form part</button></td></tr>";
+			}
+		</script>
+	</head>
+	<body>
+		<form id="form">
+			<h4>General Info - Discography</h4>
+			<table>
+				<tr>
+					<td class="cap">Name of the band</td>
+					<td class="inp"><input type="text" name="bname" autofocus required onBlur=""></td>
+				</tr>
+				<tr>
+					<td class="cap">An ID</td>
+					<td class="inp"><input type="text" name="id" autofocus required onBlur=""></td>
+				</tr>
+				<tr>
+					<td class="cap">Genre</td>
+					<td class="inp"><input type="text" name="genre" required onBlur=""></td>
+				</tr>
+				<tr>
+					<td class="cap">Formed in</td>
+					<td class="inp"><input type="number" name="fyear" size="4" max="2013" min="1950" required onBlur=""></td>
+				</tr>
+				<tr>
+					<td class="cap">No of studio albums</td>
+					<td class="inp"><input type="number" name="albums" required onBlur=""></td>
+				</tr>
+				<tr>
+					<td class="cap">No of EPs</td>
+					<td class="inp"><input type="number" name="EPs" required onBlur=""></td>
+				</tr>
+				<tr>
+					<td class="cap">No of Singles</td>
+					<td class="inp"><input type="number" name="SPs" required onBlur=""></td>
+				</tr>
+			</table><br>
+			<h4>Current Members</h4>
+			<table id="memb">
+				<tr><td>
+					<button type="button" onclick="addMember('memb');">Add member form part</button>
+				</td></tr>
+			</table>			
+			<br><br>
+			<button type="submit" onclick="sendData();return false;">Submit</button>
+			<button type="reset" onclick="removeMembers('memb');">Reset</button>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+                     targetNamespace="http://DigitalLibraries.org"
+                     xmlns="http://DigitalLibraries.org"
+                     elementFormDefault="qualified">
+    
+    <xs:element name="artists">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="artist" maxOccurs="unbounded"/>        
+			</xs:sequence>      
+		</xs:complexType>    
+    </xs:element>
+    
+    <xs:element name="artist">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="name"/>
+				<xs:element ref="genre"/>
+				<xs:element ref="fyear"/>
+				<xs:element ref="albums"/>
+				<xs:element ref="current_members"/>
+			</xs:sequence>    
+			<xs:attribute name="id" type="xs:string" use="required"/>  
+		</xs:complexType>    
+    </xs:element>
+    
+    <xs:element name="name" type="xs:string"/>
+    
+    <xs:element name="genre" type="xs:string"/>
+    
+    <xs:element name="fyear" type="xs:string"/>
+    
+    <xs:element name="albums">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:integer">
+					<xs:attribute name="EPs" type="xs:integer" use="required"/>
+					<xs:attribute name="SPs" type="xs:integer" use="required"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>    
+    </xs:element>
+    
+    <xs:element name="current_members">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="member" maxOccurs="unbounded"/>        
+			</xs:sequence>
+			<xs:attribute name="number" type="xs:integer"/>
+		</xs:complexType>    
+    </xs:element>
+    
+    <xs:element name="member">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="mname"/>
+				<xs:element ref="pos" maxOccurs="unbounded"/>        
+			</xs:sequence>      
+		</xs:complexType>    
+    </xs:element>
+    
+    <xs:element name="mname" type="xs:string"/>
+    
+    <xs:element name="pos" type="xs:string"/>
+  
+</xs:schema>

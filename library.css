@@ -1,0 +1,34 @@
+/*body*/
+body 
+{ background-color:black; color:white; }
+
+/*tag-specific*/
+p 
+{ text-align:center; }
+ul 
+{text-align:center; list-style-type:none; }
+ol 
+{ text-align:center; list-style-type:none; }
+h5
+{ text-align:right;}
+
+/*classes*/
+.that 
+{ text-align:center; }
+.controls 
+{ margin-left:380; }
+.container 
+{ min-width: 700px; }
+.left_col 
+{ width: 360px;	float: left; text-align:right;}
+.right_col 
+{ width: 360px;	float: right; text-align:left;}
+.page_content 
+{ margin-left: 360px; margin-right: 360px; }
+.head 
+{ }
+
+/*id-specific*/
+#top
+{ display: block; height: 450px; overflow: hidden;  
+background: black url("images/fl2ex.jpg") no-repeat scroll; width:1400;}

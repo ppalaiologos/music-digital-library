@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><?xml-stylesheet type="text/xsl" href="library.xslt"?><artists>
+<!-- Iron Maiden -->
+	<artist id="maiden">
+		<name>Iron Maiden</name>
+		<genre>Heavy Metal</genre>
+		<fyear>1975</fyear>
+		<albums EPs="0" SPs="21">15</albums>
+		<current_members number="6">
+			<member>
+				<mname>Steve Harris</mname><pos>backing vocals</pos><pos>bass guitar</pos></member><member><mname>Dave Murray</mname><pos>guitars</pos></member><member><mname>Adrian Smith</mname><pos>guitars</pos></member><member><mname>Bruce Dickinson</mname><pos>lead vocals</pos></member><member><mname>Nicko McBrain</mname><pos>percussion</pos></member><member><mname>Janick Gers</mname><pos>guitars</pos></member></current_members></artist>
+
+<!-- Helloween -->	
+	<artist id="hellween">
+		<name>Helloween</name>
+		<genre>Power Metal</genre>
+		<fyear>1984</fyear>
+		<albums EPs="3" SPs="25">14</albums>
+		<current_members number="5">
+			<member>
+				<mname>Michael Weikath</mname>
+				<pos>guitars</pos>
+				<pos>backing vocals</pos>
+			</member>
+			<member>
+				<mname>Markus Grosskopf</mname>
+				<pos>backing vocals</pos>
+				<pos>bass guitar</pos>
+			</member>
+			<member>
+				<mname>Andi Deris</mname>
+				<pos>lead vocals</pos>
+			</member>
+			<member>
+				<mname>Sascha Gerstner</mname>
+				<pos>backing vocals</pos>
+				<pos>guitars</pos>
+			</member>
+			<member>
+				<mname>Daniel Löble</mname>
+				<pos>percussion</pos>
+			</member>
+		</current_members>
+	</artist>
+
+<!-- Accept -->	
+	<artist id="accept">
+		<name>Accept</name>
+		<genre>Heavy Metal</genre>
+		<fyear>1960</fyear>
+		<albums EPs="2" SPs="25">13</albums>
+		<current_members number="5">
+			<member>
+				<mname>Mark Tornillo</mname>
+				<pos>lead vocals</pos>
+			</member>
+			<member>
+				<mname>Wolf Hoffmann</mname>
+				<pos>guitars</pos>
+			</member>
+			<member>
+				<mname>Herman Frank</mname>
+				<pos>guitars</pos>
+			</member>
+			<member>
+				<mname>Peter Baltes</mname>
+				<pos>bass guitar</pos>
+				<pos>backing vocals</pos>
+			</member>
+			<member>
+				<mname>Stefan Schwarzmann</mname>
+				<pos>percussion</pos>
+			</member>
+		</current_members>
+	</artist>
+
+<!-- AC/DC -->	
+	<artist id="acdc">
+		<name>AC/DC</name>
+		<genre>Hard Rock</genre>
+		<fyear>1974</fyear>
+		<albums EPs="1" SPs="46">18</albums> 
+		<current_members number="5">
+			<member>
+				<mname>Angus Young</mname>
+				<pos>lead guitar</pos>
+			</member>
+			<member>
+				<mname>Malcolm Young</mname>
+				<pos>rhythm guitar</pos>
+				<pos>backing vocals</pos>
+			</member>
+			<member>
+				<mname>Cliff Williams</mname>
+				<pos>bass guitar</pos>
+				<pos>backing vocals</pos>
+			</member>
+			<member>
+				<mname>Brian Johnson</mname>
+				<pos>lead vocals</pos>
+			</member>
+			<member>
+				<mname>Phil Rudd</mname>
+				<pos>percussion</pos>
+			</member>
+		</current_members>
+	</artist>
+
+<!-- Blind Guardian -->	
+	<artist id="guardian">
+		<name>Blind Guardian</name>
+		<genre>Speed/Power Metal</genre>
+		<fyear>1980s</fyear>
+		<albums EPs="0" SPs="9">9</albums>
+		<current_members number="5">
+			<member>
+				<mname>Hansi Kürsch</mname>
+				<pos>lead vocals</pos>
+			</member>
+			<member>
+				<mname>Andrè Olbrich</mname>
+				<pos>lead guitar</pos>
+				<pos>backing vocals</pos>
+			</member>
+			<member>
+				<mname>Marcus Siepen</mname>
+				<pos>rhythm guitar</pos>
+				<pos>backing vocals</pos>
+			</member>
+			<member>
+				<mname>Frederik Ehmke</mname>
+				<pos>bagpipes</pos>
+				<pos>percussion</pos>
+				<pos>flute</pos>
+			</member>
+			<member>
+				<mname>Barend Courbois</mname>
+				<pos>bass guitar</pos>
+			</member>
+		</current_members>
+	</artist>
+
+<!-- Dire Straits -->	
+	<artist id="straits">
+		<name>Dire Straits</name>
+		<genre>Rock</genre>
+		<fyear>1977</fyear>
+		<albums EPs="2" SPs="23">6</albums>
+		<current_members number="4">
+			<member>
+				<mname>Mark Knopfler</mname>
+				<pos>lead guitar</pos>
+				<pos>lead vocals</pos>
+			</member>
+			<member>
+				<mname>John Illsley</mname>
+				<pos>bass guitar</pos>
+				<pos>backing vocals</pos>
+			</member>
+			<member>
+				<mname>Alan Clark</mname>
+				<pos>keyboards</pos>
+			</member>
+			<member>
+				<mname>Guy Fletcher</mname>
+				<pos>synthesizer</pos>
+				<pos>backing vocals</pos>
+			</member>
+		</current_members>
+	</artist>
+
+<!-- Gamma Ray -->	
+	<artist id="gamma">
+		<name>Gamma Ray</name>
+		<genre>Heavy/Power Metal</genre>
+	    <fyear>1989</fyear>
+		<albums EPs="3" SPs="7">10</albums>
+		<current_members number="4">
+			<member>
+				<mname>Kai Hansen</mname>
+				<pos>lead vocals</pos>
+				<pos>guitars</pos>
+			</member>
+			<member>
+				<mname>Henjo Richter</mname>
+				<pos>keyboards</pos>
+				<pos>guitars</pos>
+			</member>
+			<member>
+				<mname>Dirk Schlächter</mname>
+				<pos>bass guitar</pos>
+			</member>
+			<member>
+				<mname>Michael Ehré</mname>
+				<pos>percussion</pos>
+			</member>
+		</current_members>
+	</artist>
+
+<!-- Fates Warning -->	
+	<artist id="fates">
+		<name>Fates Warning</name>
+		<genre>Heavy/Progressive metal</genre>
+		<fyear>1982</fyear>
+		<albums EPs="3" SPs="24">10</albums>
+		<current_members number="5">
+			<member>
+				<mname>Jim Matheos</mname>
+				<pos>guitars</pos>
+			</member>
+			<member>
+				<mname>Frank Aresti</mname>
+				<pos>guitars</pos>
+			</member>
+			<member>
+				<mname>Ray Alder</mname>
+				<pos>lead vocals</pos>
+			</member>
+			<member>
+				<mname>Joey Vera</mname>
+				<pos>bass guitar</pos>
+			</member>
+			<member>
+				<mname>Bobby Jarzombek</mname>
+				<pos>percussion</pos>
+			</member>
+		</current_members>
+	</artist>
+
+<!-- Gravedigger -->
+	<artist id="digger">
+		<name>Grave Digger</name>
+		<genre>Heavy Metal</genre>
+		<fyear>1980</fyear>
+		<albums EPs="2" SPs="15">16</albums>
+		<current_members number="5">
+			<member>
+				<mname>Chris Boltendahl</mname>
+				<pos>lead vocals</pos>
+			</member>
+			<member>
+				<mname>Axel Ritt</mname>
+				<pos>guitars</pos>
+			</member>
+			<member>
+				<mname>Jens Becker</mname>
+				<pos>bass guitar</pos>
+			</member>
+			<member>
+				<mname>Stefan Arnold</mname>
+				<pos>percussion</pos>
+			</member>
+			<member>
+				<mname>Hans Peter "H.P." Katzenburg</mname>
+				<pos>keyboards</pos>
+			</member>
+		</current_members>
+	</artist>
+
+<!-- Psychotic Waltz -->
+	<artist id="waltz">
+		<name>Psychotic Waltz</name>
+		<genre>Progressive Metal</genre>
+		<fyear>1988</fyear>
+		<albums EPs="0" SPs="0">6</albums>
+		<current_members number="5">
+			<member>
+				<mname>Devon Graves</mname>
+				<pos>lead vocals</pos>
+				<pos>flute</pos>
+			</member>
+			<member>
+				<mname>Dan Rock</mname>
+				<pos>keyboards</pos>
+				<pos>guitars</pos>
+			</member>
+			<member>
+				<mname>Brian McAlpin</mname>
+				<pos>guitars</pos>
+			</member>
+			<member>
+				<mname>Ward Evans</mname>
+				<pos>bass guitar</pos>
+				<pos>tambourine</pos>
+			</member>
+			<member>
+				<mname>Normal Leggio</mname>
+				<pos>percussion</pos>
+			</member>
+		</current_members>
+	</artist>
+
+<!-- orden Ogan -->
+	<artist id="orden">
+		<name>Orden Ogan</name>
+		<genre>Melodic/Power Metal</genre>
+		<fyear>1996</fyear>
+		<albums EPs="0" SPs="0">3</albums>
+		<current_members number="5">
+			<member>
+				<mname>Seeb</mname>
+				<pos>guitars</pos>
+				<pos>vocals</pos>
+			</member>
+			<member>
+				<mname>Tobi</mname>
+				<pos>guitars</pos>
+			</member>
+			<member>
+				<mname>Nils</mname>
+				<pos>keyboards</pos>
+				<pos>vocals</pos>
+			</member>
+			<member>
+				<mname>Lars</mname>
+				<pos>bass guitar</pos>
+			</member>
+			<member>
+				<mname>Ghnu</mname>
+				<pos>percussion</pos>
+			</member>
+		</current_members>
+	</artist>
+	
+<!-- Firewind -->
+	<artist id="fwind">
+		<name>Firewind</name>
+		<genre>Heavy Metal</genre>
+		<fyear>1998</fyear>
+		<albums EPs="0" SPs="6">7</albums>
+		<current_members number="5">
+			<member>
+				<mname>Costas "Gus G." Karamitroudis</mname>
+				<pos>lead guitar</pos>
+			</member>
+			<member>
+				<mname>Petros Christodoulidis</mname>
+				<pos>bass guitar</pos>
+			</member>
+			<member>
+				<mname>Bob Katsionis</mname>
+				<pos>rhythm guitar</pos>
+				<pos>keyboards</pos>
+			</member>
+			<member>
+				<mname>Apollo Papathanasio</mname>
+				<pos>lead vocals</pos>
+			</member>
+			<member>
+				<mname>Johan Nunez</mname>
+				<pos>percussion</pos>
+			</member>
+		</current_members>
+	</artist>
+	
+<!-- Rhapsody of Fire -->
+	<artist id="rhapsody">
+		<name>Rhapsody of Fire</name>
+		<genre>Symphonic Power Metal</genre>
+		<fyear>1993</fyear>
+		<albums EPs="3" SPs="7">8</albums>
+		<current_members number="6">
+			<member>
+				<mname>Alex Staropoli</mname>
+				<pos>keyboards</pos>
+			</member>
+			<member>
+				<mname>Fabio Lione</mname>
+				<pos>lead vocals</pos>
+			</member>
+			<member>
+				<mname>Alex Holzwarth</mname>
+				<pos>percussion</pos>
+			</member>
+			<member>
+				<mname>Tom Hess</mname>
+				<pos>lead guitar</pos>
+			</member>
+			<member>
+				<mname>Oliver Holzwarth</mname>
+				<pos>bass guitar</pos>
+			</member>
+			<member>
+				<mname>Roberto de Micheli</mname>
+				<pos>rhythm guitar</pos>
+			</member>
+		</current_members>
+	</artist>
+	
+<!-- Iced Earth -->
+	<artist id="icedearth">
+		<name>Iced Earth</name>
+		<genre>Heavy Metal</genre>
+		<fyear>1985</fyear>
+		<albums EPs="4" SPs="5">10</albums>
+		<current_members number="5">
+			<member>
+				<mname>Jon Schaffer</mname>
+				<pos>backing vocals</pos>
+				<pos>guitars</pos>
+			</member>
+			<member>
+				<mname>Brent Smedley</mname>
+				<pos>percussion</pos>
+			</member>
+			<member>
+				<mname>Troy Seele</mname>
+				<pos>guitars</pos>
+				<pos>backing vocals</pos>
+			</member>
+			<member>
+				<mname>Stu Block</mname>
+				<pos>lead vocals</pos>
+			</member>
+			<member>
+				<mname>Luke Appleton</mname>
+				<pos>bass guitar</pos>
+				<pos>backing vocals</pos>
+			</member>
+		</current_members>
+	</artist>
+	
+<!-- Judas Priest -->
+	<artist id="judas">
+		<name>Judas Priest</name>
+		<genre>Heavy Metal</genre>
+		<fyear>1969</fyear>
+		<albums EPs="4" SPs="30">16</albums>
+		<current_members number="5">
+			<member>
+				<mname>Ian Hill</mname>
+				<pos>bass guitar</pos>
+			</member>
+			<member>
+				<mname>Rob Halford</mname>
+				<pos>lead vocals</pos>
+			</member>
+			<member>
+				<mname>Glen Tipton</mname>
+				<pos>guitars</pos>
+				<pos>keyboards</pos>
+				<pos>synthesizer</pos>
+			</member>
+			<member>
+				<mname>Scott Travis</mname>
+				<pos>percussion</pos>
+			</member>
+			<member>
+				<mname>Richie Faulkner</mname>
+				<pos>guitars</pos>
+			</member>
+		</current_members>
+	</artist>
+	
+<!-- Lynyrd Skynyrd -->
+	<artist id="lynyrd">
+		<name>Lynyrd Skynyrd</name>
+		<genre>Southern Hard Rock</genre>
+		<fyear>1970</fyear>
+		<albums EPs="4" SPs="25">14</albums>
+		<current_members number="7">
+			<member>
+				<mname>Gary Rossington</mname>
+				<pos>guitars</pos>
+			</member>
+			<member>
+				<mname>Rickey Medlocke</mname>
+				<pos>backing vocals</pos>
+				<pos>guitars</pos>
+			</member>
+			<member>
+				<mname>Johnny Van Zant</mname>
+				<pos>lead vocals</pos>
+			</member>
+			<member>
+				<mname>Michael Cartellone</mname>
+				<pos>percussion</pos>
+			</member>
+			<member>
+				<mname>Mark Matejka</mname>
+				<pos>guitars</pos>
+				<pos>backing vocals</pos>
+			</member>
+			<member>
+				<mname>Peter Keys</mname>
+				<pos>keyboards</pos>
+			</member>
+			<member>
+				<mname>Johnny Colt</mname>
+				<pos>bass guitar</pos>
+			</member>
+		</current_members>
+	</artist>
+	
+<!-- Motorhead -->
+	<artist id="motorhead">
+		<name>Motörhead</name>
+		<genre>Hard Rock</genre>
+		<fyear>1975</fyear>
+		<albums EPs="4" SPs="20">20</albums>
+		<current_members number="3">
+			<member>
+				<mname>Ian "Lemmy" Kilmister</mname>
+				<pos>lead vocals</pos>
+				<pos>bass guitar</pos>
+			</member>
+			<member>
+				<mname>Phil "Wizzö" Campbell</mname>
+				<pos>backing vocals</pos>
+				<pos>guitars</pos>
+			</member>
+			<member>
+				<mname>Mikkey Dee</mname>
+				<pos>percussion</pos>
+			</member>
+		</current_members>
+	</artist>
+	
+<!-- Nevermore -->
+	<artist id="nevermore">
+		<name>Nevermore</name>
+		<genre>Progressive Metal</genre>
+		<fyear>1991</fyear>
+		<albums EPs="1" SPs="1">7</albums>
+		<current_members number="4">
+			<member>
+				<mname>Warrel Dane</mname>
+				<pos>lead Vocals</pos>
+			</member>
+			<member>
+				<mname>Jim Sheppard</mname>
+				<pos>bass guitar</pos>
+			</member>
+			<member>
+				<mname>Jeff Loomis</mname>
+				<pos>backing vocals</pos>
+				<pos>guitars</pos>
+			</member>
+			<member>
+				<mname>Van Williams</mname>
+				<pos>percussion</pos>
+			</member>
+		</current_members>
+	</artist>
+	
+<!-- Tool -->
+	<artist id="tool">
+		<name>Tool</name>
+		<genre>Progressive Rock/Metal</genre>
+		<fyear>1990</fyear>
+		<albums EPs="1" SPs="12">4</albums>
+		<current_members number="4">
+			<member>
+				<mname>Danny Carey</mname>
+				<pos>percussion</pos>
+			</member>
+			<member>
+				<mname>Adam Jones</mname>
+				<pos>guitars</pos>
+			</member>
+			<member>
+				<mname>Maynard James Keenan</mname>
+				<pos>lead vocals</pos>
+			</member>
+			<member>
+				<mname>Justin Chancellor</mname>
+				<pos>bass guitar</pos>
+			</member>
+		</current_members>
+	</artist>
+	
+<!-- UFO -->	
+	<artist id="ufo">
+		<name>UFO</name>
+		<genre>Hard Rock</genre>
+		<fyear>1969</fyear>
+		<albums EPs="3" SPs="11">21</albums>
+		<current_members number="5">
+			<member>
+				<mname>Phil Mogg</mname>
+				<pos>lead vocals</pos>
+			</member>
+			<member>
+				<mname>Andy Parker</mname>
+				<pos>percussion</pos>
+			</member>
+			<member>
+				<mname>Paul Raymond</mname>
+				<pos>keyboards</pos>
+				<pos>backing vocals</pos>
+			</member>
+			<member>
+				<mname>Vinnie Moore</mname>
+				<pos>guitars</pos>
+			</member>
+			<member>
+				<mname>Rob de Luca</mname>
+				<pos>bass guitar</pos>
+			</member>
+		</current_members>
+	</artist>
+	
+<artist id="adagio"><name>Adagio</name><genre>Progressive/Power Metal</genre><fyear>2001</fyear><albums EPs="0" SPs="0">4</albums><current_members number="5"><member><mname>Stephan Forte</mname><pos>guitars</pos></member><member><mname>Franck Hermanny</mname><pos>bass guitar</pos></member><member><mname>Kevin Codfert</mname><pos>keyboards</pos></member><member><mname>Eric Lebailly</mname><pos>drums</pos></member><member><mname>Kelly Sundown Carpenter</mname><pos>vocals</pos></member></current_members></artist></artists>
